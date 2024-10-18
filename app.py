@@ -1,9 +1,11 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np 
+import numpy as np
 from pathlib import Path
-caminho = str(Path(__file__).resolve().parent)
+
+# Diretório base do arquivo atual
+caminho = Path(__file__).resolve().parent
 
 # streamlit run app.py no terminal!
 st.title("Meu primeiro dashboard!")
@@ -17,8 +19,7 @@ st.markdown(
 )
 
 # Carregando o CSV uma única vez no início
-# caminho = "C:\\Users\\isabe\\Documents\\PROJETOS\\atividadesSala\\frontend"
-df = pd.read_csv(caminho + "\\data\\planilhao.csv")
+df = pd.read_csv(caminho / "data" / "planilhao.csv")  # Usando Pathlib para criar o caminho
 
 # Criando as abas
 abas = st.tabs(["Botão", "Radio", "Dataframe", "Gráfico"])
