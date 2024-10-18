@@ -1,5 +1,5 @@
 # frontend_streamlit
-# 📊 Dashboard de Ações com Magic Formula
+# 📊 Dashboard
 
 Este projeto tem como objetivo criar um dashboard interativo utilizando **Streamlit** para visualização de uma carteira de ações baseada na **Magic Formula**, popularizada por Joel Greenblatt. A ferramenta permite uma análise de dados financeiros com gráficos, tabelas, e seleção de cores personalizada.
 
